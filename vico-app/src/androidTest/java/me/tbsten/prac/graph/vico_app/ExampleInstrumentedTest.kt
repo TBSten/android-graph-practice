@@ -1,4 +1,4 @@
-package me.tbsten.prac.graph
+package me.tbsten.prac.graph.vico_app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

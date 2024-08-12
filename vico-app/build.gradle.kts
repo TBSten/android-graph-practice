@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "me.tbsten.prac.graph"
+    namespace = "me.tbsten.prac.graph.vico_app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "me.tbsten.prac.graph"
+        applicationId = "me.tbsten.prac.graph.vico_app"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

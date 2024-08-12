@@ -1,4 +1,4 @@
-package me.tbsten.prac.graph
+package me.tbsten.prac.graph.vico_app
 
 import org.junit.Test
 

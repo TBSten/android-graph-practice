@@ -1,4 +1,4 @@
-package me.tbsten.prac.graph
+package me.tbsten.prac.graph.vico_app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import me.tbsten.prac.graph.ui.theme.GraphPracTheme
+import me.tbsten.prac.graph.vico_app.ui.theme.GraphPracTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

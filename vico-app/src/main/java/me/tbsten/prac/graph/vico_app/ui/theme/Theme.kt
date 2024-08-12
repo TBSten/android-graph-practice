@@ -1,4 +1,4 @@
-package me.tbsten.prac.graph.ui.theme
+package me.tbsten.prac.graph.vico_app.ui.theme
 
 import android.app.Activity
 import android.os.Build
