@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 rootProject.name = "GraphPrac"
 include(":vico-app")
 include(":mp-android-chart-app")
+include(":full-scratch-app")
