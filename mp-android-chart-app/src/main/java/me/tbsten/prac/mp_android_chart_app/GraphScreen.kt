@@ -2,6 +2,8 @@ package me.tbsten.prac.mp_android_chart_app
 
 import android.content.Context
 import android.graphics.Color
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,6 +11,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.github.mikephil.charting.charts.RadarChart
 import com.github.mikephil.charting.components.Legend
@@ -27,7 +31,10 @@ fun GraphScreen() {
                             RadarEntry(50f),
                             RadarEntry(30f),
                             RadarEntry(20f),
+                            RadarEntry(60f),
+                            RadarEntry(60f),
                             RadarEntry(40f),
+                            RadarEntry(60f),
                         ),
                         "label1",
                     ).apply {
@@ -47,13 +54,22 @@ fun GraphScreen() {
                     )
 
                     this.isRotationEnabled = false
-                    this.disableScroll()
+
+                    this.legend.isEnabled = false
+                    this.description.isEnabled = false
                     this.invalidate()
                 }
             },
-            modifier =  Modifier
+            modifier = Modifier
+                .border(4.dp, androidx.compose.ui.graphics.Color.Red)
                 .fillMaxWidth()
-                .aspectRatio(1f/1f),
+                .aspectRatio(1f / 1f),
         )
     }
+}
+
+@Preview
+@Composable
+private fun GraphScreenPreview() {
+    GraphScreen()
 }
